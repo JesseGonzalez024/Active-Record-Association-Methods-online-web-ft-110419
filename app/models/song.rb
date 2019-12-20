@@ -14,5 +14,6 @@ class Song < ActiveRecord::Base
     if !Artist.find_by_name("Drake")
       drake = Artist.create(name: "Drake")
       song.artist = drake
+    end
   end
 end
